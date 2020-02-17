@@ -7,6 +7,9 @@ block variables
 
 block content
   a-scene(embedded arjs="debugUIEnabled: false" vr-mode-ui="enabled: false")
+    a-assets
+      a-assets-item(id='#uribo' src='ar-2020-awards/materials/tree.glb')
     a-marker(type="pattern" url="../materials/marker/pattern-marker.patt")
-      a-box(position="0 0.5 0" width="0.5" height="0.5" depth="0.5" color="red")
+      a-entity(gltf-model="#uribo" scale="0.1 0.1 0.1" animation-mixer)
+      //- a-box(position="0 0.5 0" width="0.5" height="0.5" depth="0.5" color="red")
     a-entity(camera)
