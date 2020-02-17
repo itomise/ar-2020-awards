@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="ar-2020-awards//favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>トップ</title>
+    <meta name="description" content="説明">
+    <meta name="keywords">
+    <meta property="og:title" content="トップ">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="説明">
+    <meta property="og:url" content="https://">
+    <meta property="og:image" content="https://">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="トップ">
+    <meta name="twitter:description" content="説明">
+    <meta name="twitter:image:src" content="https://">
+    <meta name="twitter:domain" content="https://">
+    <link rel="stylesheet" href="ar-2020-awards/css/main.css">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body>
+    <a-scene embedded arjs="debugUIEnabled: false" vr-mode-ui="enabled: false">
+      <a-marker type="pattern" url="../materials/marker/pattern-marker.patt">
+        <a-box position="0 0.5 0" width="0.5" height="0.5" depth="0.5" color="red"></a-box>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+    <script src="ar-2020-awards/js/main.js"></script>
+  </body>
+</html>

@@ -3,7 +3,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 // ルートディレクトリの設定  - - - - - - - - - - - - - - - - - - - - -
 
-const rootDir = '/public'
+const rootDir = '/ar-2020-awards'
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -84,6 +84,12 @@ const webpack_config = {
       {
         from: './favicon.ico',
         to: './'
+      }
+    ]),
+    new CopyPlugin([
+      {
+        from: './src/materials/marker/',
+        to: './materials/'
       }
     ])
   ]
