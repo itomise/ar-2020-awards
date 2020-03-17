@@ -12,7 +12,7 @@ const PUBLIC_URL = '/ar-2020-awards'
 const webpack_config = {
   entry: globEntries('./src/javascripts/*.js'),
   output: {
-    path: path.resolve(__dirname, '../htdocs' + PUBLIC_URL),
+    path: path.resolve(__dirname, '../'),
     filename: 'js/[name].js'
   },
   module: {

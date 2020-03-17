@@ -6,10 +6,17 @@ block variables
     var description = '説明';
 
 block content
-  a-scene(embedded arjs="debugUIEnabled: false" vr-mode-ui="enabled: false")
-    a-assets
-      a-assets-item(id='uribo' src='ar-2020-awards/materials/tree.glb')
-    a-marker(type="pattern" url="ar-2020-awards/materials/pattern-marker.patt")
-      a-entity(gltf-model="#uribo" scale="0.1 0.1 0.1" animation-mixer)
-      a-box(position="0 0.5 0" width="0.5" height="0.5" depth="0.5" color="red")
-    a-entity(camera)
+  //- a-scene(embedded arjs="debugUIEnabled: false" vr-mode-ui="enabled: false")
+  //-   a-assets
+  //-     a-assets-item(id='uribo' src='ar-2020-awards/materials/tree.glb')
+  //-   a-marker(type="pattern" url="ar-2020-awards/materials/pattern-marker.patt")
+  //-     a-entity(gltf-model="#uribo" scale="0.1 0.1 0.1" animation-mixer)
+  //-     a-box(position="0 0.5 0" width="0.5" height="0.5" depth="0.5" color="red")
+  //-   a-entity(camera)
+  //-   a-sphere(position="0 1.25 -5" radius="1.25" color="#EF2D5E")
+  .
+    <a-scene embedded arjs="debugUIEnabled: false" vr-mode-ui="enabled: false">
+      <a-box position="5 0 -7" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+    </a-scene>

@@ -48,18 +48,28 @@
 
 /***/
 
-/* 1 */
+// pugをインポートする
 
-/* harmony import */
+/* 1 */
 
 /* 2 */
 
-// extracted by mini-css-extract-plugin
-
 /* 3 */
+
+// extracted by mini-css-extract-plugin
 
 /* 4 */
 
-/* 5 */
+// EXTERNAL MODULE: ./src/javascripts/modules/importPug.js
 
-/* harmony default export */
+// EXTERNAL MODULE: ./src/css/main.scss
+
+/*#__PURE__*/
+
+// CONCATENATED MODULE: ./src/javascripts/main.js
+
+/**
+   * init
+  */
+
+// document.body.style.display = 'none'
