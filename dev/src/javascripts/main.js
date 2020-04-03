@@ -21,13 +21,6 @@ class Main {
    * init
   */
   init() {
-    const aScene = document.querySelector('a-scene').object3D
-    console.log(aScene)
-    console.log('スリー：', THREE)
-    const geo = new THREE.SphereGeometry(10, 20, 20)
-    const mat = new THREE.MeshNormalMaterial()
-    const mesh = new THREE.Mesh(geo, mat)
-    aScene.add(mesh)
     document.querySelector('canvas').addEventListener('click', () => {
       if (
         DeviceMotionEvent &&
@@ -35,8 +28,6 @@ class Main {
         typeof DeviceMotionEvent.requestPermission === 'function'
       ) {
         DeviceMotionEvent.requestPermission();
-        // document.body.style.display = 'none'
-        document.querySelector('.test').style.backgroundColor = 'red'
       }
       if (
         DeviceOrientationEvent &&
@@ -44,10 +35,8 @@ class Main {
         typeof DeviceOrientationEvent.requestPermission === 'function'
       ) {
         DeviceOrientationEvent.requestPermission();
-        document.querySelector('.test').style.backgroundColor = 'yellow'
       }
     })
-
   }
 
 }
